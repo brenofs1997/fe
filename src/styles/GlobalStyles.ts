@@ -45,6 +45,8 @@ export const GlobalStyles = createGlobalStyle`
     font-family: GeneralSans, sans-serif;
   }
   body {
+    margin: 0;
+    padding: 0;
     background: #fafafa;
     color: #333;
   }
