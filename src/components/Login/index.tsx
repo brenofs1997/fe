@@ -15,13 +15,8 @@ export function Login() {
     const [loginFailed, setLoginFailed] = useState(false);
     const [provider, setProvider] = useState('');
     const [profile, setProfile] = useState<any>();
-    const REDIRECT_URI = 'http://localhost:5173/login';
     const navigate = useNavigate();
     const clientId = import.meta.env.VITE_GOOGLE_AUTH_CLIENT_ID;
-
-    const onLoginStart = useCallback(() => {
-        alert('login start');
-    }, []);
 
     return (
         <Container >
@@ -32,15 +27,13 @@ export function Login() {
 
             <LoginSocialGoogle
                 client_id={clientId || ''}
-                onLoginStart={onLoginStart}
-                redirect_uri={REDIRECT_URI}
                 scope="openid profile email"
                 discoveryDocs="claims_supported"
                 access_type="offline"
                 onResolve={({ provider, data }: IResolveParams) => {
                     setProvider(provider);
                     setProfile(data);
-                    navigate('/',{ state: { LoggedIn:true,name:data?.name } });
+                    navigate('/home',{ state: { LoggedIn:true,name:data?.name } });
                 }}
                 onReject={err => {
                     setLoginFailed(true);

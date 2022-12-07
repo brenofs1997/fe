@@ -17,8 +17,6 @@ export function App() {
         setIsLoggedIn(state ? state?.LoggedIn : false);
     }, []);
 
-
-
     return (
         <>
             <GlobalStyles />
