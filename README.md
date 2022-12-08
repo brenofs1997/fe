@@ -12,7 +12,7 @@ Essa aplicação tem como finalidade auxiliar restaurantes a controlar seus pedi
 - Axios
 - styled-components
 - vite
-- sockeio
+- socketio
 - react-toastify
 
 # Inicialização
