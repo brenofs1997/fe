@@ -5,6 +5,10 @@
 # Sobre o projeto
 Essa aplicação tem como finalidade auxiliar restaurantes a controlar seus pedidos, permitindo através de um app, realizar os pedidos e automaticamente serem enviados para um dashboard web ( tudo isso em tempo real)
 
+# Link dos Repositórios{FrontEnd, Mobile, Api}:
+- https://github.com/brenofs1997/fe
+- https://github.com/brenofs1997/mobile
+- https://github.com/brenofs1997/api
 
 # Tecnologias utilizadas
 - Typescript
